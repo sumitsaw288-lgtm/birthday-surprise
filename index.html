@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#170c25">
+<title>For My Everything ❤️</title>
+<style>
+:root{--rose:#ff9dc8;--pale:#ffe5f0;--gold:#ffe7b8}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;overflow-x:hidden;display:grid;place-items:center;padding:18px;color:#fff5fb;font-family:Georgia,serif;background:radial-gradient(ellipse at 15% 12%,#612b58,transparent 43%),radial-gradient(ellipse at 90% 88%,#43205f,transparent 45%),linear-gradient(145deg,#10091e,#25112f 55%,#12091e)}
+#stars{position:fixed;inset:0;pointer-events:none}
+.star{position:absolute;width:3px;height:3px;background:#fff4d9;border-radius:50%;animation:twinkle 2s infinite alternate}
+.wrap{width:min(100%,510px);position:relative;z-index:1}
+.card{text-align:center;position:relative;overflow:hidden;padding:clamp(24px,6vw,40px) clamp(18px,5vw,32px);border:1px solid #ffd6e855;border-radius:28px;background:#ffffff12;backdrop-filter:blur(14px);box-shadow:0 25px 90px #0008}
+.kicker{font:10px Arial,sans-serif;letter-spacing:.23em;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(34px,9vw,48px);font-weight:normal;line-height:1.08;margin:15px 0 8px;color:var(--pale);text-shadow:0 0 24px #ff78b955}
+.gold{color:var(--gold);font-style:italic}
+.sub{font:12px/1.8 Arial,sans-serif;letter-spacing:.06em;color:#e8cfe1}
+.orbit{width:125px;height:125px;border:1px solid #ffcae866;border-radius:50%;margin:24px auto;display:grid;place-items:center;position:relative;box-shadow:0 0 34px #ff8fbd22}
+.orbit:before{content:"";position:absolute;inset:8px;border:1px dashed #ffe7b899;border-radius:50%;animation:spin 18s linear infinite}
+.cake{font-size:58px;animation:bob 3s ease-in-out infinite;filter:drop-shadow(0 8px 14px #ff83ba66)}
+p{font-size:15px;line-height:1.85;color:#f8eaf4}
+button{border:0;border-radius:99px;padding:14px 22px;margin:8px 4px 0;background:linear-gradient(110deg,#ffe7b8,#ffb8d7,#ff8fbe);color:#40152f;font-weight:bold;cursor:pointer}
+button:focus-visible{outline:2px solid white;outline-offset:4px}
+#letter,#final{display:none;margin-top:23px;padding-top:20px;border-top:1px solid #ffd6e844;animation:reveal 1s ease}
+h2{font-size:25px;font-weight:normal;color:var(--gold);margin:8px 0}
+.small{font:12px/1.7 Arial,sans-serif;color:#d9bfd6}
+.signature{font-style:italic;font-size:19px;color:var(--rose)}
+.footer{font:10px Arial,sans-serif;letter-spacing:.14em;color:#cbb2ca;margin-top:22px}
+#countdown{display:flex;gap:8px;justify-content:center;margin:18px auto 8px;max-width:340px}
+.timebox{flex:1;padding:10px 4px;border:1px solid #ffd6e844;border-radius:13px;background:#ffffff0b}
+.timebox strong{display:block;font-size:24px;font-weight:normal;color:var(--gold)}
+.timebox span{display:block;font:9px Arial,sans-serif;letter-spacing:.1em;color:#e8cfe1;margin-top:4px}
+.float{position:fixed;bottom:-35px;z-index:4;pointer-events:none;animation:rise linear forwards}
+.confetti{position:fixed;top:-15px;z-index:4;pointer-events:none;animation:fall linear forwards}
+@keyframes twinkle{to{opacity:.15;transform:scale(.6)}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes bob{50%{transform:translateY(-8px) rotate(2deg)}}@keyframes reveal{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@keyframes rise{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:.1}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body>
+<div id="stars" aria-hidden="true"></div>
+<main class="wrap"><section class="card">
+<div class="kicker">A little universe, made just for you</div>
+<h1>Happy Birthday,<br><span class="gold">My Everything 🤭❤️</span></h1>
+<div class="sub">9 DECEMBER 2026 · YOUR SPECIAL DAY ✨</div>
+<div id="countdown" aria-label="Countdown to birthday">
+ <div class="timebox"><strong id="days">--</strong><span>DAYS</span></div>
+ <div class="timebox"><strong id="hours">--</strong><span>HOURS</span></div>
+ <div class="timebox"><strong id="minutes">--</strong><span>MINUTES</span></div>
+ <div class="timebox"><strong id="seconds">--</strong><span>SECONDS</span></div>
+</div>
+<div class="small" id="countText">Counting down to your special day 💗</div>
+<div class="orbit"><div class="cake">🎂</div></div>
+<p>My love, my lifeline, meri sweetheart, meri darling… 🥹🫂</p>
+<p>For the girl who has a special place in my heart, I made this little surprise. Ready, meri kuchuupuchu? 🤭💗</p>
+<button id="openBtn">Open your love letter 💌</button>
+<div id="letter" aria-live="polite">
+<h2>For my jaan 🌷</h2>
+<p>Happy Birthday, meri gulu mulu rasmalai! 🎂❤️</p>
+<p>Tum mere liye bahut special ho. Tumhari smile, tumhari baatein aur tumhara hona mere liye bahut मायने rakhta hai. Meri dil se wish hai ki tumhari zindagi khushiyon, sukoon aur pyaare moments se bhari rahe. ✨</p>
+<p>Tumhare saare dreams poore hon, tumhe har din muskurane ki wajah mile, aur tum hamesha apni beautiful si self bani raho. Duniya tumhe utni hi kindness aur happiness de jitni tum deserve karti ho. 🌸</p>
+<p>Main shayad har feeling perfect words mein na keh paun, par tum mere liye sach mein bahut मायने rakhti ho. Agar ye chhota sa surprise tumhare face par ek smile le aaye, toh meri mehnat successful hai. 🤭💞</p>
+<p class="signature">Hamesha khush rehna, meri jaan. 🫂❤️</p>
+<button id="lastBtn">Ek last baat… 💗</button>
+<div id="final"><h2>You mean so much to me. ❤️</h2><p>Stay happy, stay magical, meri sweetheart. Happy Birthday once again! 🎀✨</p><div style="font-size:30px">💗 🌷 🎂 🫶 💗</div></div>
+</div>
+<div class="footer">MADE WITH LOVE, A LITTLE SHYNESS & LOTS OF WISHES</div>
+</section></main>
+<script>
+const root=document.getElementById('stars');
+for(let i=0;i<85;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';s.style.opacity=.2+Math.random()*.7;root.appendChild(s)}
+function updateCountdown(){
+ const now=new Date(), target=new Date(2026,11,9,0,0,0), diff=target-now;
+ if(diff<=0){
+  document.getElementById('countdown').style.display='none';
+  document.getElementById('countText').textContent=(now.toDateString()===target.toDateString())?'It’s your special day! Happy Birthday! 🎂❤️':'Your birthday magic day has passed—hope it was beautiful! 💗';
+  return;
+ }
+ document.getElementById('days').textContent=Math.floor(diff/86400000);
+ document.getElementById('hours').textContent=Math.floor(diff%86400000/3600000);
+ document.getElementById('minutes').textContent=Math.floor(diff%3600000/60000);
+ document.getElementById('seconds').textContent=Math.floor(diff%60000/1000);
+}
+updateCountdown();setInterval(updateCountdown,1000);
+function floaties(n){for(let i=0;i<n;i++){let e=document.createElement('span');e.className='float';e.textContent=['♡','♥','✦','🌸','💗'][Math.floor(Math.random()*5)];e.style.left=Math.random()*100+'vw';e.style.fontSize=14+Math.random()*20+'px';e.style.color=['#ffb5d5','#ffe6b8','#ff8fbd','#fff0fa'][Math.floor(Math.random()*4)];e.style.animationDuration=4+Math.random()*4+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),8500)}}
+function confetti(){for(let i=0;i<65;i++){let e=document.createElement('span');e.className='confetti';e.textContent=['✦','✧','♥','•'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.fontSize=10+Math.random()*18+'px';e.style.color=['#ffe6b8','#ffb5d5','#fff','#ff8fbd'][Math.floor(Math.random()*4)];e.style.animationDuration=2+Math.random()*3+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),5500)}}
+document.getElementById('openBtn').onclick=()=>{document.getElementById('letter').style.display='block';document.getElementById('openBtn').style.display='none';floaties(48);confetti()};
+document.getElementById('lastBtn').onclick=()=>{document.getElementById('final').style.display='block';document.getElementById('lastBtn').style.display='none';floaties(30);confetti()};
+setInterval(()=>floaties(2),3000);
+</script>
+</body></html>
